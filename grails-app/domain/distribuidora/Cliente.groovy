@@ -10,7 +10,7 @@ class Cliente {
     String correoElectronico
     String nit //Equivalente del RFC
     Date fechaRegistro
-    BigDecimal limiteCrediticio
+    BigDecimal limiteCrediticio = new BigDecimal("0.00")
     
     static constraints = {
         nombre maxSize:128, blank:false
@@ -21,7 +21,7 @@ class Cliente {
         correoElectronico maxSize:128, blank:false
         nit maxSize:64, blank:false
         fechaRegistro blank:false
-        limiteCrediticio blank:true
+        limiteCrediticio (scale:2,precision:8,min:new BigDecimal("0"))
     }
     
     static mapping = {
