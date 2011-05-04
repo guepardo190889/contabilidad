@@ -271,3 +271,46 @@ th.desc a {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
+
+#footer {
+    background: url(../images/skin/bar_decoration.png) center no-repeat;
+    clear:both;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;
+    font-size: 11px
+}
+
+#header {
+    width: auto;
+    -moz-box-shadow:0 1px 3px #444444;
+    background: #556270;
+    height:70px;
+    margin:20px 0 5px;
+}
+
+#page {
+    width: 1000px;
+    margin: 0px auto;
+    padding: 4px 0;
+    text-align:left;
+}
+
+#status {
+    margin-right: auto;
+    top: 20px;
+    right: 6px;
+    text-align: right;
+    color: white;
+    font-family: "Helvetica";
+}
+
+#slogan {
+    margin-top: 20px;
+    margin-left: auto;
+    top: 20px;
+    right: 6px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+}
