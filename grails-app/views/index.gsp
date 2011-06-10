@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Sistema de Distribuidora</title>
+        <title>Distribuidora Crystal Fashion</title>
         <meta name="layout" content="main" />
     </head>
     
@@ -13,6 +13,13 @@
           <ul>
             <li><a href="cliente/create"><span>Alta Cliente</span></a></li>
             <li><a href="#"><span><g:link class="cliente" controller="cliente"><g:message code="Lista de Clientes" /></g:link></span></a></li>
+          </ul>
+          
+        </li>
+        <li><a href="#" class="parent"><span>Producto</span></a>
+          <ul>
+            <li><a href="producto/create"><span>Alta Producto</span></a></li>
+            <li><a href="#"><span><g:link class="producto" controller="producto"><g:message code="Lista de Productos" /></g:link></span></a></li>
           </ul>
         </li>
       </ul>

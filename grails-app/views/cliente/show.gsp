@@ -72,7 +72,7 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.nit.label" default="Nit" /></td>
+                            <td valign="top" class="name"><g:message code="cliente.nit" default="Nit" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "nit")}</td>
                             

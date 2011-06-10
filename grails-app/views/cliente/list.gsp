@@ -33,6 +33,12 @@
                             <g:sortableColumn property="telefonoCelular" title="${message(code: 'cliente.telefonoCelular.label', default: 'Telefono Celular')}" />
                         
                             <g:sortableColumn property="fax" title="${message(code: 'cliente.fax.label', default: 'Fax')}" />
+                            
+                            <g:sortableColumn property="correoElectronico" title="${message(code: 'cliente.correoElectronico.label', default: 'Email')}" />
+                            
+                            <g:sortableColumn property="fechaRegistro" title="${message(code: 'cliente.fechaRegistro.label', default: 'Registro')}" />
+                            
+                            <g:sortableColumn property="limiteCrediticio" title="${message(code: 'cliente.limiteCrediticio.label', default: 'Credito')}" />
                         
                         </tr>
                     </thead>
@@ -51,6 +57,12 @@
                             <td>${fieldValue(bean: clienteInstance, field: "telefonoCelular")}</td>
                         
                             <td>${fieldValue(bean: clienteInstance, field: "fax")}</td>
+                            
+                            <td>${fieldValue(bean: clienteInstance, field: "correoElectronico")}</td>
+                            
+                            <td><g:formatDate date="${fieldValue(bean: clienteInstance, field: "fechaRegistro")}" /></td>
+                            
+                            <td>${fieldValue(bean: clienteInstance, field: "limiteCrediticio")}</td>
                         
                         </tr>
                     </g:each>

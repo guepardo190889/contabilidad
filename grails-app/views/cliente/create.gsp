@@ -42,7 +42,7 @@
                                     <label for="direccion"><g:message code="cliente.direccion.label" default="Direccion" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'direccion', 'errors')}">
-                                    <g:textArea name="direccion" cols="40" rows="5" value="${clienteInstance?.direccion}" />
+                                    <g:textField name="direccion" maxlength="256" value="${clienteInstance?.direccion}" />
                                 </td>
                             </tr>
                         
@@ -84,19 +84,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="nit"><g:message code="cliente.nit.label" default="Nit" /></label>
+                                    <label for="nit"><g:message code="cliente.nit"/></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'nit', 'errors')}">
                                     <g:textField name="nit" maxlength="64" value="${clienteInstance?.nit}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="fechaRegistro"><g:message code="cliente.fechaRegistro.label" default="Fecha Registro" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'fechaRegistro', 'errors')}">
-                                    <g:datePicker name="fechaRegistro" precision="day" value="${clienteInstance?.fechaRegistro}"  />
                                 </td>
                             </tr>
                         

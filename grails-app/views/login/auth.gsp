@@ -48,18 +48,19 @@
 			<g:if test='${flash.message}'>
 			<div class='login_message'>${flash.message}</div>
 			</g:if>
-			<div class='fheader'>Please Login..</div>
+			<div class='fheader'>Identifíquese porfavor...</div>
 			<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 				<p>
-					<label for='username'>Login ID</label>
+					<label for='username'>Usuario</label>
 					<input type='text' class='text_' name='j_username' id='username' />
 				</p>
 				<p>
-					<label for='password'>Password</label>
+					<label for='password'>Contrase&ntilde;a</label>
 					<input type='password' class='text_' name='j_password' id='password' />
 				</p>
-				<p>
-					<label for='remember_me'>Remember me</label>
+				
+                                <p>
+					<label for='remember_me'>Recordarme</label>
 					<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me'
 					<g:if test='${hasCookie}'>checked='checked'</g:if> />
 				</p>

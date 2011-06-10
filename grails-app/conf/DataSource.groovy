@@ -3,7 +3,7 @@ dataSource {
     driverClassName = "org.postgresql.Driver"
     username = "tomcat"
     password = "aeiou123"
-    dbCreate = "create"
+    dbCreate = "update" // create, create-drop, update
     url = 'jdbc:postgresql:contab'
 }
 hibernate {

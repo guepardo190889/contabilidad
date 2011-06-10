@@ -27,6 +27,7 @@
             <g:form method="post" >
                 <g:hiddenField name="id" value="${clienteInstance?.id}" />
                 <g:hiddenField name="version" value="${clienteInstance?.version}" />
+                <g:hiddenField name="fechaRegistro" value="${clienteInstance?.fechaRegistro}" />
                 <div class="dialog">
                     <table>
                         <tbody>
@@ -91,15 +92,6 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'nit', 'errors')}">
                                     <g:textField name="nit" maxlength="64" value="${clienteInstance?.nit}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="fechaRegistro"><g:message code="cliente.fechaRegistro.label" default="Fecha Registro" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'fechaRegistro', 'errors')}">
-                                    <g:datePicker name="fechaRegistro" precision="day" value="${clienteInstance?.fechaRegistro}"  />
                                 </td>
                             </tr>
                         

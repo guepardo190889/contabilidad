@@ -9,7 +9,8 @@ class Cliente {
     String fax
     String correoElectronico
     String nit //Equivalente del RFC
-    Date fechaRegistro
+    Date fechaRegistro = new Date();
+    //Date fechaModificacion = new Date();
     BigDecimal limiteCrediticio = new BigDecimal("0.00")
     
     static constraints = {

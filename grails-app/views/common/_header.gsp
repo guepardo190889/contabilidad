@@ -3,7 +3,7 @@
   <div id="header" style="margin-left: 140px;margin-right: 160px;">
   
     <div id="slogan"
-         <a href="${createLinkTo(dir:'')}">Sistema de Distribuidora</a>
+         <a href="${createLinkTo(dir:'')}">Distribuidora Crystal-Fashion</a>
     </div>
     
     <div id="status">

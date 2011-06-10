@@ -88,7 +88,9 @@ log4j = {
 
     warn   'org.mortbay.log'
 
-    debug 'grails.app', 'org.hhibernate.SQL'
+    debug   'grails.app',
+            'org.hhibernate.SQL',
+            'org.springframework.security'
 }
 
 //Para que las entidades generen su propio id incremental
@@ -102,3 +104,5 @@ grails.gorm.failOnError = true
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'general.Usuario'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'general.UsuarioRol'
 grails.plugins.springsecurity.authority.className = 'general.Rol'
+
+//grails.plugins.springsecurity.rejectIfNoRule = true
